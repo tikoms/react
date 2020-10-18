@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-ReactDOM.render( <
-    div >
-    <
-    h1 > Hello world! < /h1> <
-    p > This is a paragraph < /p> <
-    /div>,
-    document.getElementById("root"),
-);
+function MyApp() {
+    return ( <
+        ul >
+        <
+        li > This is < /li> <li> an </li > < li > unordered list. < /li>{" "} <
+        /ul>
+    );
+}
+
+ReactDOM.render( < MyApp / > , document.getElementById("root"));
