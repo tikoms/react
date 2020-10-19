@@ -1,13 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import MyInfo from "./components/MyInfo";
 
-function MyApp() {
-    return ( <
-        ul >
-        <
-        li > This is < /li> <li> an </li > < li > unordered list. < /li>{" "} <
-        /ul>
-    );
-}
-
-ReactDOM.render( < MyApp / > , document.getElementById("root"));
+ReactDOM.render( < MyInfo / > , document.getElementById("root"));
