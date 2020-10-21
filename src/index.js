@@ -15,5 +15,22 @@ Book.prototype.addTheme = function(theme) {
 book1.addTheme("La Isla Bonita");
 book2.addTheme("Senzana Donner");
 
+/*
 console.log(book1);
 console.log(book2);
+*/
+
+console.log(Object.getPrototypeOf({}));
+console.log(Object.getPrototypeOf({}).constructor);
+
+console.log(Object.getPrototypeOf(book1));
+console.log(book1.__proto__);
+console.log(Object.getPrototypeOf(book1).constructor);
+
+console.log(Object.getPrototypeOf(book2));
+console.log(book2.__proto__);
+console.log(book2.__proto__ === Book.prototype);
+console.log(book2.__proto__.__proto__ === Object.prototype);
+console.log(Object.getPrototypeOf(book2).constructor);
+
+console.log(new Object());
